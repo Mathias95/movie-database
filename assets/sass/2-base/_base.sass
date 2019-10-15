@@ -1,0 +1,31 @@
+*
+	margin: 0
+	padding: 0
+
+*,
+*::before,
+*::after
+	box-sizing: inherit
+
+html
+	box-sizing: border-box
+	font-size: 62.5% //10px / 16px = 62.5% --> 1rem = 10px
+	word-spacing: 1px
+	-ms-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+	-moz-osx-font-smoothing: grayscale
+	-webkit-font-smoothing: antialiased
+
+body
+	font-family: $primary-font, sans-serif
+	font-size: 16px
+	line-height: 1.7
+	background-image: radial-gradient(circle at 100% 0%, rgb(55, 65, 74), rgb(16, 34, 49))
+	background-repeat: no-repeat
+	background-attachment: fixed
+	color: $white-color
+	font-weight: $normal
+
+img
+	max-width: 100%
+	max-height: 100%

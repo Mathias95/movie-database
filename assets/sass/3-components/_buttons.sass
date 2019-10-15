@@ -1,0 +1,38 @@
+%btn
+	font-size: 1.5rem
+	text-decoration: none
+	text-transform: capitalize
+	transition: all 400ms
+	text-align: center
+	border-radius: 10rem
+	font-weight: $normal
+	background-color: transparent
+	padding: 1.8rem 4rem
+	font-family: $primary-font
+	color: $white-color
+	display: inline-flex
+	align-items: center
+
+.btn
+	@extend %btn
+	&-primary
+		background-color: $primary-color
+		
+		&:hover
+			background-color: darken( $primary-color, 5% )
+
+
+	&-secondary
+		@extend %btn
+		background-color: $secondary-color
+
+		&:hover
+			background-color: darken( $secondary-color, 5% )
+
+	&-tertiary
+		@extend %btn
+		background-color: $tertiary-color
+
+		&:hover
+
+			background-color: darken( $tertiary-color, 5% )
