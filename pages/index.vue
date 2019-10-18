@@ -11,7 +11,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-lg-5 welcome__right">
-					<img src="~assets/images/mobile-index.png" alt="" class="welcome__img">
+					<img src="~assets/images/mobile-index.png" alt="mobile app picture" class="welcome__img">
 				</div>
 			</div>
 		</div>

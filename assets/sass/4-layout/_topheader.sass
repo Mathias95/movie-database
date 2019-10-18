@@ -1,0 +1,55 @@
+.header
+	padding: 1rem 0
+	background-color: $grey-dark-4-color
+	box-shadow: $xsmall-shadow
+
+	@media #{$xl-bp}
+		background-color: $trans-color
+		box-shadow: none
+
+	&__mobile-wrapper
+		display: flex
+		align-items: center
+		margin: 0 auto
+		padding: 0 5%
+
+	&__mobile
+		margin-right: auto
+		height: 3.5rem
+		width: 3.5rem
+		cursor: pointer
+		background-color: $trans-color
+		border: 0
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: center
+
+		@media #{$xl-bp}
+			display: none
+
+	&__mobile-line
+		width: 3rem
+		height: 2px
+		background-color: $white-color
+		position: absolute
+		top: 50%
+		display: block
+
+		&--1
+			margin-top: -.8rem
+
+		&--2
+			margin-top: -.1rem
+
+		&--3
+			margin-top: .6rem
+
+	&__logo
+		display: none
+
+		@media #{$xl-bp}
+			margin-right: auto
+			display: inline-flex
+
+	&__search

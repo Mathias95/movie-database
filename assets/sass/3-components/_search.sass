@@ -1,0 +1,40 @@
+.search
+	height: 4rem
+	width: 4rem
+	position: relative
+	outline: 0
+	padding: 2rem
+	cursor: pointer
+	display: flex
+	align-items: center
+	justify-content: center
+	background-color: $primary-color
+	border-radius: 100px
+	box-shadow: $medium-shadow
+
+	@media #{$xl-bp}
+		width: 5rem
+		height: 5rem
+		padding: 2.5rem
+
+	&__button
+		color: $white-color
+		pointer-events: none
+		outline: 0
+		line-height: 0
+		cursor: not-allowed
+		border-width: 0
+		background-color: transparent
+
+		.material-icons
+			font-size: 2.2rem
+
+	&__input
+		width: 100%
+		font-size: 1.6rem
+		background-color: transparent
+		border-width: 0
+		color: $white-color
+		outline: 0
+		margin-left: 0
+		font-weight: $light
