@@ -1,0 +1,48 @@
+.sidebar
+	background-color: $grey-dark-4-color
+	position: fixed
+	z-index: 2
+	overflow-y: auto
+	height: 100%
+	width: 80%
+	left: -80%
+
+	@media only screen and (min-width: 23.45em)
+		width: 32rem
+		left: -32rem
+
+	@media #{$xl-bp}
+		left: 0
+
+	&.on
+		margin-left: 80%
+		
+		@media only screen and (min-width: 23.45rem)
+			margin-left: 32rem
+
+		@media #{$xl-bp}
+			margin-left: 0
+
+	&__menu
+
+	&__list
+
+	&__item
+
+	&__link
+		color: $grey-dark-1-color
+		text-decoration: none
+
+	&__overlay
+		min-width: 100%
+		min-height: 100%
+		display: none
+		z-index: 1
+		position: fixed
+		top: 0
+		left: 0
+		cursor: pointer
+		background-color: $black-opc-75-color
+
+		&.on
+			display: block
