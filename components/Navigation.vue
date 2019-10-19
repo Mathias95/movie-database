@@ -17,7 +17,13 @@
 		<aside class="sidebar trans-sidebar" v-bind:class="{'on': offCanvas}">
 			<nav class="sidebar__menu">
 				<ul class="sidebar__list">
-					<li class="sidebar__item"><nuxt-link to="/" class="sidebar__link">Trending movies</nuxt-link></li>
+					<li class="sidebar__item" v-for="item in items" :key="item.title">
+						<nuxt-link :to="item.to" class="sidebar__link trans-fast"> 
+							<i class="material-icons sidebar__item-icon">{{ item.icon }}</i>
+							{{ item.title }}
+						</nuxt-link>
+					</li>
+					<div class="sidebar__bottom-line"></div>
 				</ul>
 			</nav>
 		</aside>
@@ -32,8 +38,30 @@ import Search from "~/components/Search.vue";
 export default {
 	data(){
 		return {
-			offCanvas: false
-		}
+			offCanvas: false,
+			items: [
+				{
+					icon: 'star',
+					title: 'Trending Movies',
+					to: '/home'
+				},
+				{
+					icon: 'assessment',
+					title: 'Top Rated',
+					to: '/'
+				},
+				{
+					icon: 'event',
+					title: 'Upcoming',
+					to: '/'
+				},
+				{
+					icon: 'favorite_border',
+					title: 'Favorite Movies',
+					to: '/'
+				}
+			]
+		};
 	},
 	methods: {
 		toggle() {

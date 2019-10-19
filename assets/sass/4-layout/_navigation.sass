@@ -1,3 +1,65 @@
+//Top heading with hamburger icon and search function
+.header
+	padding: 2rem 0
+	background-color: $grey-dark-4-color
+	box-shadow: $xsmall-shadow
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+
+	@media #{$xl-bp}
+		background-color: $trans-color
+		box-shadow: none
+		left: 32rem
+
+	&__mobile-wrapper
+		display: flex
+		align-items: center
+		margin: 0 auto
+		padding: 0 5%
+
+	&__mobile
+		margin-right: auto
+		height: 3.5rem
+		width: 3.5rem
+		cursor: pointer
+		background-color: $trans-color
+		border: 0
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: center
+
+		@media #{$xl-bp}
+			display: none
+
+	&__mobile-line
+		width: 3rem
+		height: 2px
+		background-color: $white-color
+		position: absolute
+		top: 50%
+		display: block
+
+		&--1
+			margin-top: -.8rem
+
+		&--2
+			margin-top: -.1rem
+
+		&--3
+			margin-top: .6rem
+
+	&__logo
+		display: none
+
+		@media #{$xl-bp}
+			margin-right: auto
+			display: inline-flex
+
+			
+//Sidebar navigation	
 .sidebar
 	background-color: $grey-dark-4-color
 	position: fixed
@@ -28,10 +90,37 @@
 	&__list
 
 	&__item
+		a.nuxt-link-exact-active
+			color: $white-color
+			background-color: $grey-dark-5-color
+			border-left: .50rem solid $primary-color
 
 	&__link
 		color: $grey-dark-1-color
 		text-decoration: none
+		text-transform: capitalize
+		padding: 1.8rem 4rem
+		position: relative
+		display: flex
+		align-items: center
+		line-height: 1
+		border-left: .50rem solid $trans-color
+
+		@media only screen and (min-width: 23.45em)
+			padding: 1.8rem 6rem
+
+		&:hover
+			color: $white-color
+			background-color: $grey-dark-5-color
+			border-left: .50rem solid $primary-color
+
+	&__item-icon
+		margin-right: 1rem
+
+	&__bottom-line
+		height: 0.15rem
+		margin: 2rem 8% 0rem 8%
+		background-color: $grey-dark-3-color
 
 	&__overlay
 		min-width: 100%
