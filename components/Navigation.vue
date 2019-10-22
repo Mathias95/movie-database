@@ -16,15 +16,18 @@
 		
 		<aside class="sidebar trans-sidebar" v-bind:class="{'on': offCanvas}">
 			<nav class="sidebar__menu">
-				<ul class="sidebar__list">
-					<li class="sidebar__item" v-for="item in items" :key="item.title">
-						<nuxt-link :to="item.to" class="sidebar__link trans-fast"> 
-							<i class="material-icons sidebar__item-icon">{{ item.icon }}</i>
-							{{ item.title }}
-						</nuxt-link>
-					</li>
-				</ul>
-				<hr class="sidebar__bottom-line">
+				<div class="sidebar__wrapper">
+					<DropdownProfile/>
+					<ul class="sidebar__list">
+						<li class="sidebar__item" v-for="item in items" :key="item.title">
+							<nuxt-link :to="item.to" class="sidebar__link trans-fast"> 
+								<i class="material-icons sidebar__item-icon">{{ item.icon }}</i>
+								{{ item.title }}
+							</nuxt-link>
+						</li>
+					</ul>
+					<hr class="sidebar__bottom-line">
+				</div>
 			</nav>
 		</aside>
 		<div @click="toggle" class="sidebar__overlay" v-bind:class="{'on': offCanvas }"></div>
@@ -34,6 +37,7 @@
 <script>
 import Logo from "~/components/Logo.vue";
 import Search from "~/components/Search.vue";
+import DropdownProfile from "~/components/DropdownProfile.vue";
 
 export default {
 	data(){
@@ -70,7 +74,8 @@ export default {
 	},
 	components: {
 		Logo,
-		Search
+		Search,
+		DropdownProfile
 	}
 }
 </script>

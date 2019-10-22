@@ -1,0 +1,55 @@
+.banner
+	height: 100vh
+	background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("~assets/images/banner.jpg")
+	background-position: 0rem 0rem, 50% 50%
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+
+	&__container
+		height: 100%
+		display: flex
+		align-items: flex-end
+
+	&__text-col
+		margin-bottom: 12rem
+		width: 100%
+		max-width: 100%
+		position: relative
+		padding-left: 15px
+		padding-right: 15px
+		flex-basis: 0
+		flex-grow: 1
+		
+		@media #{$lg-bp}
+			margin-bottom: 15rem
+
+	&__text-wrapper
+		@media #{$sm-bp}
+			max-width: 39rem
+
+		@media #{$md-bp}
+			max-width: 44rem
+
+		@media #{$lg-bp}
+			max-width: 65rem
+
+	&__title
+		margin-bottom: 2rem
+		line-height: 1.2
+		font-size: 3rem
+
+		@media only screen and (min-width: 23.375em)
+			font-size: 3.2rem
+
+		@media #{$sm-bp}
+			font-size: 4.1rem
+		
+		@media #{$md-bp}
+			font-size: 4.4rem
+
+		@media #{$lg-bp}
+			font-size: 7rem
+
+	&__text
+		font-size: 1.6rem

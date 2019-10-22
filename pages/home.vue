@@ -1,9 +1,13 @@
 <template>
-	
+	<HomeBanner/>
 </template>
 
 <script>
-export default {
+import HomeBanner from "~/components/HomeBanner.vue";
 
+export default {
+	components: {
+		HomeBanner
+	}
 }
 </script>

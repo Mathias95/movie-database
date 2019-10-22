@@ -7,11 +7,15 @@
 	top: 0
 	right: 0
 	left: 0
+	z-index: 1
 
 	@media #{$xl-bp}
 		background-color: $trans-color
 		box-shadow: none
 		left: 32rem
+		padding-top: 4rem
+		padding-bottom: 4rem
+		background: red
 
 	&__mobile-wrapper
 		display: flex
@@ -58,7 +62,6 @@
 			margin-right: auto
 			display: inline-flex
 
-			
 //Sidebar navigation	
 .sidebar
 	background-color: $grey-dark-4-color
@@ -69,23 +72,29 @@
 	width: 80%
 	left: -80%
 
-	@media only screen and (min-width: 23.45em)
+	@media only screen and (min-width: 23.375em)
 		width: 32rem
 		left: -32rem
 
 	@media #{$xl-bp}
 		left: 0
+		position: relative
+		flex-shrink: 0
 
 	&.on
 		margin-left: 80%
 		
-		@media only screen and (min-width: 23.45rem)
+		@media only screen and (min-width: 23.375em)
 			margin-left: 32rem
 
 		@media #{$xl-bp}
 			margin-left: 0
 
 	&__menu
+		height: 100%
+
+	&__wrapper
+		overflow-y: auto
 
 	&__list
 		margin-bottom: 2rem
@@ -100,15 +109,15 @@
 		color: $grey-dark-1-color
 		text-decoration: none
 		text-transform: capitalize
-		padding: 1.8rem 4rem
+		padding: 1.8rem 2rem
 		position: relative
 		display: flex
 		align-items: center
 		line-height: 1
 		border-left: .50rem solid $trans-color
 
-		@media only screen and (min-width: 23.45em)
-			padding: 1.8rem 6rem
+		@media only screen and (min-width: 23.375em)
+			padding: 1.8rem 4rem
 
 		&:hover
 			color: $white-color
@@ -137,3 +146,6 @@
 
 		&.on
 			display: block
+
+			@media #{$xl-bp}
+				display: none

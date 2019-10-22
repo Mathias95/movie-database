@@ -1,8 +1,13 @@
+.app-wrapper
+	@media #{$xl-bp}
+		display: flex
+		height: 100vh
+		flex: 1 1 0%
+	
 .main
+	width: 100%
 	
 	@media #{$xl-bp}
-		width: calc(100% - 32rem)
-		margin-left: 32rem
 		position: relative
-		//only for test
-		background-color: red
+		flex: 1 1 0%
+		overflow-x: hidden
