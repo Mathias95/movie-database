@@ -23,8 +23,8 @@
 							{{ item.title }}
 						</nuxt-link>
 					</li>
-					<div class="sidebar__bottom-line"></div>
 				</ul>
+				<hr class="sidebar__bottom-line">
 			</nav>
 		</aside>
 		<div @click="toggle" class="sidebar__overlay" v-bind:class="{'on': offCanvas }"></div>
