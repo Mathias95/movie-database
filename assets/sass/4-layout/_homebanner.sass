@@ -16,10 +16,14 @@
 		width: 100%
 		max-width: 100%
 		position: relative
-		padding-left: 15px
-		padding-right: 15px
+		padding-left: 1.5rem
+		padding-right: 1.5rem
 		flex-basis: 0
 		flex-grow: 1
+
+		@media #{$md-bp}
+			padding-left: 5%
+			padding-right: 5%
 		
 		@media #{$lg-bp}
 			margin-bottom: 15rem
@@ -32,7 +36,7 @@
 			max-width: 44rem
 
 		@media #{$lg-bp}
-			max-width: 65rem
+			max-width: 67rem
 
 	&__title
 		margin-bottom: 2rem
@@ -40,7 +44,7 @@
 		font-size: 3rem
 
 		@media only screen and (min-width: 23.375em)
-			font-size: 3.2rem
+			font-size: 3.3rem
 
 		@media #{$sm-bp}
 			font-size: 4.1rem

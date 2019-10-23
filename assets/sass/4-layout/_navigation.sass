@@ -12,21 +12,22 @@
 	@media #{$xl-bp}
 		background-color: $trans-color
 		box-shadow: none
-		left: 32rem
 		padding-top: 4rem
 		padding-bottom: 4rem
-		background: red
 
 	&__mobile-wrapper
 		display: flex
 		align-items: center
 		margin: 0 auto
-		padding: 0 5%
+		padding: 0 1.5rem
+
+		@media #{$md-bp}
+			padding: 0 5%
 
 	&__mobile
 		margin-right: auto
-		height: 3.5rem
-		width: 3.5rem
+		height: 3rem
+		width: 3rem
 		cursor: pointer
 		background-color: $trans-color
 		border: 0

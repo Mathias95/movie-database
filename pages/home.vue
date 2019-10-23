@@ -1,13 +1,18 @@
 <template>
-	<HomeBanner/>
+	<div>
+		<HomeBanner/>
+		<MovieList/>
+	</div>
 </template>
 
 <script>
 import HomeBanner from "~/components/HomeBanner.vue";
+import MovieList from "~/components/MovieList.vue";
 
 export default {
 	components: {
-		HomeBanner
+		HomeBanner,
+		MovieList
 	}
 }
 </script>

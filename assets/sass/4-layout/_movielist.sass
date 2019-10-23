@@ -1,0 +1,54 @@
+.movies-wrapper
+
+.movies
+	width: 100%
+	padding-right: 1.5rem
+	padding-left: 1.5rem
+	margin-right: auto
+	margin-left: auto
+
+	@media #{$lg-bp}
+		padding-left: 5%
+		padding-right: 5%
+
+	&__headline
+		margin-top: 7.5rem
+		margin-bottom: 4rem
+
+		@media #{$lg-bp}
+			margin-top: 12.5rem
+			margin-bottom: 5rem
+
+	&__title
+		font-size: 3rem
+		font-weight: $normal
+		text-transform: capitalize
+		margin-bottom: 1.5rem
+
+		@media #{$lg-bp}
+			font-size: 4rem
+			margin-bottom: 2rem
+
+	&__underline-wrapper
+		display: flex
+		height: .2rem
+		background-color: $grey-dark-3-color
+
+	&__underline
+		background-color: $secondary-color
+		width: 15rem
+		height: .2rem
+
+	&__list
+		list-style-type: none
+
+	&__more
+		margin: 8rem 0rem
+		display: flex
+		align-items: center
+		justify-content: center
+
+		@media #{$lg-bp}
+			margin: 10rem 0rem
+
+	&__load
