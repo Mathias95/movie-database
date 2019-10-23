@@ -14,6 +14,7 @@
 		box-shadow: none
 		padding-top: 4rem
 		padding-bottom: 4rem
+		margin-left: 32rem
 
 	&__mobile-wrapper
 		display: flex
@@ -39,13 +40,20 @@
 		@media #{$xl-bp}
 			display: none
 
+	&__mobile:hover &__mobile-line--1
+		margin-top: -1rem
+
+	&__mobile:hover &__mobile-line--3
+		margin-top: .8rem
+
 	&__mobile-line
 		width: 3rem
 		height: 2px
 		background-color: $white-color
 		position: absolute
 		top: 50%
-		display: block
+		display: inline-block
+		transition: all .2s
 
 		&--1
 			margin-top: -.8rem

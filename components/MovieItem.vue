@@ -1,7 +1,7 @@
 <template>
 	<div class="col-6 col-md-4 col-lg-3 xl-4 movie-card">
 		<li class="movie-item">
-			<nuxt-link to="" class="movie-item__link">
+			<nuxt-link to="/moviedetail" class="movie-item__link">
 				<figure class="movie-item__img-wrapper">
 					<img src="~assets/images/movie-poster.jpg" alt="movie poster" class="movie-item__img">
 					<!-- <img src="" alt="movie poster" class="movie-item__img load"> -->
