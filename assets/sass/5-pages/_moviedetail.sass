@@ -1,0 +1,121 @@
+.movie-detail
+
+	&__banner
+		height: 75vh
+		background: red
+
+	&__banner-container
+
+	&__banner-wrapper
+		display: flex
+		align-items: center
+
+	&__title
+		font-size: 3.2rem
+		font-weight: $bold
+		line-height: 1.2
+		text-transform: capitalize
+		word-wrap: break-word
+		margin-bottom: 1rem
+
+	&__release
+		display: none
+
+.movie-genre
+	list-style-type: none
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 1.5rem
+
+	&__tag
+		font-size: 1.2rem
+		font-weight: $medium
+		text-transform: uppercase
+		padding: .8rem 1.8rem
+		background-color: green
+		//background-color: $white-opc-15-color
+		border-radius: 2.5rem
+
+		&:not(:last-child)
+			margin-right: 1rem
+
+.movie-info
+	display: flex
+	align-items: center
+	list-style-type: none
+	margin-bottom: 3rem
+
+	&__playtime
+
+	&__release
+
+.movie-synopsis
+	display: none
+
+.movie-rating
+
+	&--desktop
+		display: none
+
+.movie-social
+	display: flex
+	align-items: center
+
+	&__watch
+
+	&__link
+
+		&--desktop
+			display: none
+
+	&__favourite
+		cursor: pointer
+		color: $white-color
+		border: 0
+		display: flex
+		align-items: center
+		background-color: $trans-color
+		margin-left: 1.5rem
+
+		&:focus
+			outline: none
+
+.movie-content
+	padding-top: 3rem
+
+	@media #{$lg-bp}
+		padding-top: 5rem
+
+	&__container
+
+	&__left
+		margin-bottom: 5rem
+
+	&__title
+		font-size: 2.2rem
+		font-weight: $normal
+		margin-bottom: 2.5rem
+		line-height: 1.2
+		text-transform: capitalize
+
+	&__text
+
+	&__right
+
+	&__credit
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-end
+		margin-bottom: 2.5rem
+
+	&__credit-title
+		font-size: 2.2rem
+		font-weight: $normal
+		line-height: 1.2
+		text-transform: capitalize
+		margin-right: 1.5rem
+
+	&__credit-order
+		font-size: 1.2rem
+		font-weight: $light
+		color: $grey-dark-1-color
