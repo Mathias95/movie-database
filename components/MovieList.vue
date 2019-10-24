@@ -1,9 +1,9 @@
 <template>
 	<section class="movies-wrapper">
-		<div class="movies">
+		<div class="movies costum-container">
 			<div class="row">
 				<header class="movies__headline col">
-					<h2 class="movies__title">Latest movies</h2>
+					<h2 class="movies__title">Trending movies</h2>
 					<div class="movies__underline-wrapper">
 						<div class="movies__underline"></div>
 					</div>
