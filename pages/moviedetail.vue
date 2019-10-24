@@ -3,7 +3,7 @@
 		<section class="movie-detail__banner">
 			<div class="movie-detail__banner-container costum-container">
 				<div class="movie-detail__banner-wrapper">
-					<h1 class="movie-detail__title">Wonder woman</h1>
+					<h1 class="movie-detail__title heading-1">Wonder woman</h1>
 					<p class="movie-detail__release">(<span>2017</span>)</p>
 				</div>
 
@@ -43,13 +43,13 @@
 			<div class="movie-content__container costum-container">
 				<div class="row">
 					<div class="movie-content__left col-12 col-lg-6">
-						<h2 class="movie-content__title">The synopsis</h2>
+						<h3 class="movie-content__title heading-4">The synopsis</h3>
 						<p class="movie-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 					</div>
 
 					<div class="movie-content__right col-12 col-lg-6">
 						<div class="movie-content__credit">
-							<h3 class="movie-content__credit-title">Full cast &amp; crew</h3>
+							<h3 class="movie-content__credit-title heading-4">Full cast &amp; crew</h3>
 							<span class="movie-content__credit-order">(In credits order)</span>
 						</div>
 

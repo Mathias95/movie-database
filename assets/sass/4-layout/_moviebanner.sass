@@ -1,0 +1,186 @@
+.movie-detail
+
+	&__banner
+		height: 75vh
+		display: flex
+		align-items: flex-end
+		position: relative
+		background-image: url("~assets/images/movie-banner-bg.jpg")
+		background-size: cover
+		background-position: 50% 50%
+		background-repeat: no-repeat
+
+		@media #{$lg-bp}
+			height: 80vh
+
+		@media #{$xl-bp}
+			height: 75rem
+
+	&__banner-container
+		margin-bottom: 8rem
+
+		@media #{$lg-bp}
+			margin-bottom: 10rem
+
+	&__banner-wrapper
+		margin-bottom: 2rem
+		display: flex
+		align-items: center
+
+		@media #{$md-bp}
+			align-items: flex-end
+
+	&__wrapper
+		@media #{$md-bp}
+			display: flex
+			align-items: center
+			margin-bottom: 2.5rem
+
+		@media #{$xl-bp}
+			margin-bottom: 5rem
+
+	&__title
+
+		@media #{$sm-bp}
+			line-height: 1
+
+	&__release
+		display: none
+
+		@media #{$md-bp}
+			font-size: 2rem
+			display: inline-block
+			color: $white-opc-50-color
+			margin-left: 1.5rem
+
+		@media #{$lg-bp}
+			font-size: 2.5rem	
+
+.movie-genre
+	list-style-type: none
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 1.5rem
+
+	@media #{$md-bp}
+		margin-bottom: 0rem
+
+	&__tag
+		font-size: 1.2rem
+		font-weight: $medium
+		text-transform: uppercase
+		padding: .8rem 1.8rem
+		background-color: $white-opc-15-color
+		border-radius: 2.5rem
+
+		&:not(:last-child)
+			margin-right: 1rem
+
+		@media screen and (max-width: 21.25em)
+			&:last-child
+				margin-top: 1rem
+
+.movie-info
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	list-style-type: none
+	margin-bottom: 3rem
+
+	@media #{$md-bp}
+		margin-bottom: 0rem
+
+	&__playtime
+		span
+			margin-left: .5rem
+
+	&__seperator
+		margin: 0 .8rem
+
+		&--left
+			display: none
+
+			@media #{$md-bp}
+				display: inline-block
+
+		&--right
+			@media #{$md-bp}
+				display: none
+			
+	&__release
+		@media #{$md-bp}
+			display: none
+
+	&__release-year
+		margin-left: 0.5rem
+
+.movie-synopsis
+	display: none
+
+	@media #{$lg-bp}
+		display: block
+		max-width: 60rem
+		margin-bottom: 2.5rem
+
+.movie-rating
+	display: flex
+	align-items: center
+	margin-bottom: 3rem
+
+	@media #{$lg-bp}
+		margin-bottom: 5rem
+
+	&__text
+		font-size: 1.5rem
+		color: $white-opc-50-color
+		margin-right: 1.5rem
+
+		@media #{$lg-bp}
+			font-size: 1.8rem
+
+	&__wrapper
+		display: flex
+		align-items: center
+		line-height: 1
+
+	&__icon
+		font-size: 1.8rem !important
+		margin-right: .5rem
+
+		@media #{$lg-bp}
+			font-size: 2.8rem !important
+
+	&__score
+		font-size: 3rem
+		font-weight: $medium
+
+		@media #{$lg-bp}
+			font-size: 4rem
+
+.movie-social
+	display: flex
+	align-items: center
+
+	&__link
+
+		&--desktop
+			display: none
+
+			@media #{$md-bp}
+				display: inline-flex
+				margin-left: 1.5rem
+
+	&__favourite
+		cursor: pointer
+		color: $white-color
+		border: 0
+		display: flex
+		align-items: center
+		background-color: $trans-color
+		margin-left: 1.5rem
+
+		@media #{$md-bp}
+			margin-left: 2rem
+
+		&:focus
+			outline: none

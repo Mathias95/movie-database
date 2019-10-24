@@ -1,9 +1,11 @@
 <template>
-  <div class="app-wrapper" id="app">
-		<navigation/>
-		<section class="main">
-			<nuxt />
-		</section>
+  <div id="app">
+		<div class="app-wrapper">
+			<main class="main">
+				<navigation/>
+				<nuxt />
+			</main>
+		</div>
   </div>
 </template>
 
