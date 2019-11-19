@@ -1,5 +1,5 @@
 <template>
-	<header class="header">
+	<header class="header__wrapper">
 		<div class="header__mobile-wrapper">
 			<button @click="toggle" class="header__mobile" v-bind:class="{ 'is-active': slideMenu }">
 				<span class="header__mobile-line header__mobile-line--1"></span>

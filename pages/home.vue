@@ -1,8 +1,8 @@
 <template>
-	<div class="home">
+	<section id="#homePage">
 		<HomeBanner/>
 		<MovieList/>
-	</div>
+	</section>
 </template>
 
 <script>

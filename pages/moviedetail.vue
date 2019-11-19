@@ -1,6 +1,6 @@
 <template>
-	<div class="movie-detail">
-		<section class="movie-detail__banner">
+	<div id="movieDetailPage">
+		<div class="movie-detail__banner">
 			<div class="movie-detail__banner-container costum-container">
 				<div class="movie-detail__banner-wrapper">
 					<h1 class="movie-detail__title heading-1">Wonder woman</h1>
@@ -37,9 +37,9 @@
 					<button class="movie-social__favourite"><i class="movie-social__favourite-icon material-icons">favorite_border</i></button>
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<section class="movie-content">
+		<div class="movie-content">
 			<div class="movie-content__container costum-container">
 				<div class="row">
 					<div class="movie-content__left col-12 col-lg-6">
@@ -57,7 +57,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	</div>
 </template>
 

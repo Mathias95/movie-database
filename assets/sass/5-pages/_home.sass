@@ -1,17 +1,13 @@
-.app-wrapper
+#app
 	display: flex
 	height: 100vh
+	overflow: hidden
+	
+.main	
+	position: relative
+	display: flex
 	flex-direction: column
-	
-.main
-	width: 100%
-	
-	@media #{$xl-bp}
-		position: relative
-		display: flex
-		flex: 1 1 0%
-		overflow-y: hidden
-
-.home
 	flex: 1 1 0%
-	overflow-y: auto
+	min-width: 0
+	overflow: auto
+	height: 100%

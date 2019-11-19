@@ -1,13 +1,13 @@
 .dropdown
 	position: relative
-	margin: 3rem 0rem 5rem 0rem
+	margin: 3rem 0rem 4rem 0rem
 	padding: 0rem 2rem
 
 	@media only screen and (min-width: 23.375em)
-		padding: 0rem 4rem
+		padding: 0rem 3rem
 
 	@media #{$xl-bp}
-		margin-top: 4rem
+		margin: 4rem 0rem 3rem 0rem
 
 	&__button
 		outline: none
@@ -28,14 +28,14 @@
 		display: block
 		border-radius: 100rem
 		overflow: hidden
-		height: 6.5rem
-		width: 6.5rem
+		height: 5rem
+		width: 5rem
 		border: .1rem solid $trans-color
 
 	&__profile-img
 
 	&__profile-wrapper
-		font-size: 1.8rem
+		font-size: 1.6rem
 		display: flex
 		align-items: center
 		color: $grey-dark-1-color
@@ -62,6 +62,8 @@
 			outline: none
 
 	&__content
+		//remember to remove display none
+		display: none
 		position: absolute
 		z-index: 20
 

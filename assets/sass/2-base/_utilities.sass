@@ -4,7 +4,6 @@
 .margin-l-5
 	margin-left: .5rem
 
-
 .costum-container
 	width: 100%
 	padding-right: 1.5rem
@@ -12,7 +11,22 @@
 	margin-left: auto
 	margin-right: auto
 
+	@media #{$sm-bp}
+		max-width: 54rem
+
+	@media #{$md-bp}
+		max-width: 72rem
+
 	@media #{$lg-bp}
+		max-width: 96rem	
+
+	@media #{$xl-bp}
+		max-width: 100%
 		padding-right: 5%
 		padding-left: 5%
 
+.overflow
+	flex: 1 1 0%
+	overflow-y: auto
+	height: 100%
+	position: relative
