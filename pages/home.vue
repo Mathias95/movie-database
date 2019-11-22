@@ -1,5 +1,5 @@
 <template>
-	<section id="#homePage">
+	<section class="test">
 		<HomeBanner/>
 		<MovieList/>
 	</section>

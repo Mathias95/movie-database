@@ -3,7 +3,20 @@
 		<aside class="sidebar trans-sidebar" v-bind:class="{'on': slideMenu}">
 			<nav class="sidebar__menu">
 				<div class="sidebar__wrapper">
-					<DropdownProfile/>
+					<DropdownProfile>
+						<template #trigger="{hasFocus, isOpen}">
+							<span class="dropdown__profile-img--wrapper" :class="[(hasFocus || isOpen) ? 'focus-on' : 'focus-off' ]">
+								<img class="dropdown__profile-img" src="~assets/images/profile-img.jpg" alt="profile image">
+							</span>
+						</template>
+						<template #dropdown>
+							<ul class="dropdown__content-list">
+								<li class="dropdown__content-item"><nuxt-link to="/" class="dropdown__content-link"><i class="material-icons dropdown__content-icon">person_outline</i>Account</nuxt-link></li>
+								<li class="dropdown__content-item"><nuxt-link to="/" class="dropdown__content-link"><i class="material-icons dropdown__content-icon">help_outline</i>Help</nuxt-link></li>
+								<li class="dropdown__content-item"><nuxt-link to="/" class="dropdown__content-link"><i class="material-icons dropdown__content-icon">input</i>Sign out</nuxt-link></li>
+							</ul>
+						</template>
+					</DropdownProfile>
 					<ul class="sidebar__list">
 						<li class="sidebar__item" v-for="item in items" :key="item.title">
 							<nuxt-link :to="item.to" class="sidebar__link trans-fast"> 
@@ -16,7 +29,7 @@
 				</div>
 			</nav>
 		</aside>
-		<div @click="toggle" class="sidebar__overlay" v-bind:class="{'on': slideMenu }"></div>
+		<div @click="toggleSlide" class="sidebar__overlay" v-bind:class="{'on': slideMenu }"></div>
 	</div>
 </template>
 
@@ -28,6 +41,7 @@ import Search from "~/components/Search.vue";
 export default {
 	data(){
 		return {
+			isOpen: false,
 			slideMenu: false,
 			items: [
 				{
@@ -55,7 +69,10 @@ export default {
 	},
 	methods: {
 		toggle() {
-			this.slideMenu = !this.slideMenu;
+			this.isOpen = !this.isOpen
+		},
+		toggleSlide() {
+			this.slideMenu = !this.slideMenu
 		}
 	},
 	components: {

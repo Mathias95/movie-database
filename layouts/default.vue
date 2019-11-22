@@ -1,10 +1,8 @@
 <template>
   <div id="app">
 		<navigation/>
-		<main class="main" id="new-app">
-			<div class="header">
-				<TopHeader/>
-			</div>
+		<main class="main">
+			<TopHeader/>
 			<nuxt />
 		</main>
   </div>

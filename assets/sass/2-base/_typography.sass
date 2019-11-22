@@ -19,6 +19,9 @@
 		font-size: 4.4rem
 
 	@media #{$lg-bp}
+		font-size: 6rem
+
+	@media #{$xl-bp}
 		font-size: 7rem
 
 .heading-2
@@ -68,3 +71,16 @@
 .heading-5
 
 .heading-6
+
+%text
+	line-height: 1.9
+	font-size: 1.5rem
+	font-weight: $normal
+
+.text-normal
+	@extend %text
+
+.text-light
+	@extend %text	
+	font-weight: $light
+	font-size: 1.6rem
