@@ -66,10 +66,10 @@
 		margin-bottom: 0rem
 
 	&__tag
-		font-size: 1.2rem
+		font-size: 1rem
+		padding: .6rem 1.8rem
 		font-weight: $medium
 		text-transform: uppercase
-		padding: .8rem 1.8rem
 		background-color: $white-opc-15-color
 		border-radius: 2.5rem
 
@@ -80,12 +80,17 @@
 			&:last-child
 				margin-top: 1rem
 
+		@media #{$lg-bp}
+			font-size: 1.1rem
+
 .movie-info
 	display: flex
 	align-items: center
 	flex-wrap: wrap
 	list-style-type: none
 	margin-bottom: 2rem
+	font-size: 1.2rem
+	font-weight: $medium
 
 	@media #{$md-bp}
 		margin-bottom: 0rem

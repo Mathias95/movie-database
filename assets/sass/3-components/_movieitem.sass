@@ -4,8 +4,12 @@
 	width: 100%
 	padding-right: 1.5rem
 	padding-left: 1.5rem
-	flex: 0 0 50%
-	max-width: 50%
+	flex: 0 0 100%
+	max-width: 100%
+
+	@media screen and (min-width: 21.87em)
+		flex: 0 0 50%
+		max-width: 50%
 
 	@media #{$md-bp}
 		flex: 0 0 33.33333%
@@ -41,7 +45,7 @@
 
 	&__img-wrapper
 		position: relative
-		transition: all 400ms ease,box-shadow .4s ease
+		transition: all 400ms ease, box-shadow .4s ease
 		transform: translateZ(0)
 
 	&__img

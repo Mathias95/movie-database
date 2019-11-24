@@ -36,6 +36,7 @@
 				<button class="movie-social__favourite"><i class="movie-social__favourite-icon material-icons">favorite_border</i></button>
 			</div>
 		</div>
+		<div class="movie-detail__banner-overlay">&nbsp;</div>
 	</section>	
 </template>
 

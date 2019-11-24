@@ -1,31 +1,37 @@
 <template>
-	<div class="navigation-wrapper">
-		<aside class="sidebar trans-sidebar" v-bind:class="{'on': slideMenu}">
+	<div class="sidebar-container">
+		<aside class="sidebar trans-sidebar">
 			<nav class="sidebar__menu">
-				<div class="sidebar__wrapper">
-					<DropdownProfile>
-						<template #trigger="{hasFocus, isOpen}">
-							<span class="dropdown__profile-img--wrapper" :class="[(hasFocus || isOpen) ? 'focus-on' : 'focus-off' ]">
-								<img class="dropdown__profile-img" src="~assets/images/profile-img.jpg" alt="profile image">
-							</span>
-						</template>
-						<template #dropdown>
-							<ul class="dropdown__content-list">
-								<li class="dropdown__content-item"><nuxt-link to="/" class="dropdown__content-link"><i class="material-icons dropdown__content-icon">person_outline</i>Account</nuxt-link></li>
-								<li class="dropdown__content-item"><nuxt-link to="/" class="dropdown__content-link"><i class="material-icons dropdown__content-icon">help_outline</i>Help</nuxt-link></li>
-								<li class="dropdown__content-item"><nuxt-link to="/" class="dropdown__content-link"><i class="material-icons dropdown__content-icon">input</i>Sign out</nuxt-link></li>
-							</ul>
-						</template>
-					</DropdownProfile>
-					<ul class="sidebar__list">
-						<li class="sidebar__item" v-for="item in items" :key="item.title">
-							<nuxt-link :to="item.to" class="sidebar__link trans-fast"> 
-								<i class="material-icons sidebar__item-icon">{{ item.icon }}</i>
-								{{ item.title }}
-							</nuxt-link>
-						</li>
-					</ul>
-					<hr class="sidebar__bottom-line">
+				<div class="sidebar__menu-wrapper">
+					<div class="sidebar__menu--scroll">
+						<div class="sidebar__menu--scrollable">
+							<div class="sidebar__menu-inner">
+								<DropdownProfile>
+									<template #trigger="{hasFocus, isOpen}">
+										<span class="dropdown__profile-img--wrapper trans-fast" :class="[(hasFocus || isOpen) ? 'focus-on' : 'focus-off' ]">
+											<img class="dropdown__profile-img" src="~assets/images/profile-img.jpg" alt="profile image">
+										</span>
+									</template>
+									<template #dropdown>
+										<ul class="dropdown__content-list">
+											<li class="dropdown__content-item"><nuxt-link to="/" ref="account" class="dropdown__content-link trans-fast"><i class="material-icons dropdown__content-icon">person_outline</i>Account</nuxt-link></li>
+											<li class="dropdown__content-item"><nuxt-link to="/" class="dropdown__content-link trans-fast"><i class="material-icons dropdown__content-icon">help_outline</i>Help</nuxt-link></li>
+											<li class="dropdown__content-item"><nuxt-link to="/" class="dropdown__content-link trans-fast"><i class="material-icons dropdown__content-icon">input</i>Sign out</nuxt-link></li>
+										</ul>
+									</template>
+								</DropdownProfile>
+								<ul class="sidebar__list">
+									<li class="sidebar__item" v-for="item in items" :key="item.title">
+										<nuxt-link :to="item.to" class="sidebar__link trans-fast"> 
+											<i class="material-icons sidebar__item-icon">{{ item.icon }}</i>
+											{{ item.title }}
+										</nuxt-link>
+									</li>
+								</ul>
+								<hr class="sidebar__bottom-line">
+							</div>
+						</div>
+					</div>
 				</div>
 			</nav>
 		</aside>

@@ -1,0 +1,108 @@
+//Sidebar navigation
+.sidebar-container
+	height: 100%
+	flex-shrink: 0
+	width: 26rem
+	background-color: $grey-dark-4-color
+	display: none
+	position: fixed
+	z-index: 3
+	width: 26rem
+	left: 0
+	top: 0
+	bottom: 0
+	
+	@media #{$xl-bp}
+		left: 0
+		position: static
+		flex-shrink: 0
+		display: block
+	
+.sidebar
+	height: 100%
+
+	//This class is for the hamburger menu slide toggle function
+	&.on
+		
+
+	&__menu
+		height: 100%
+		position: relative
+		display: flex
+		overflow: hidden
+		//overflow-y: auto
+
+	&__menu-wrapper
+		height: 100%
+		position: relative
+		display: flex
+		overflow: hidden
+		flex-grow: 1
+
+	&__menu--scroll
+		min-width: 100%
+		overflow-x: hidden
+		overflow-y: auto
+		box-sizing: content-box
+
+	&__menu--scrollable
+		overflow-x: hidden
+		position: relative
+		min-height: 100%
+		overflow-y: hidden
+		box-sizing: border-box
+
+	&__menu-inner
+		flex-grow: 1
+
+	&__list
+		margin-bottom: 2rem
+		list-style-type: none
+
+	&__item
+		a.nuxt-link-exact-active
+			color: $white-color
+			background-color: $grey-dark-5-color
+			border-left: .50rem solid $primary-color
+
+	&__link
+		color: $grey-dark-1-color
+		font-size: 1.4rem
+		text-decoration: none
+		text-transform: capitalize
+		padding: 1.4rem 2.5rem
+		position: relative
+		display: flex
+		align-items: center
+		line-height: 1
+		border-left: .50rem solid $trans-color
+
+		&:hover
+			color: $white-color
+			background-color: $grey-dark-5-color
+			border-left: .50rem solid $primary-color
+
+	&__item-icon
+		margin-right: 1rem
+
+	&__bottom-line
+		margin: 0rem 2rem
+		background-color: $grey-dark-3-color
+		border: 0
+		height: .1rem
+
+	&__overlay
+		min-width: 100%
+		min-height: 100%
+		display: none
+		z-index: 2
+		position: fixed
+		top: 0
+		left: 0
+		background-color: $black-opc-75-color
+
+		&.on
+			display: block
+
+			@media #{$xl-bp}
+				display: none
