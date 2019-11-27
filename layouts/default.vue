@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-		<navigation/>
+		<Sidebar/>
 		<main class="main">
 			<TopHeader/>
 			<nuxt />
@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import Navigation from "~/components/Navigation.vue";
+import Sidebar from "~/components/Sidebar.vue";
 import TopHeader from "~/components/TopHeader.vue";
 
 export default {
 	components: {
-		Navigation,
+		Sidebar,
 		TopHeader
 	}
 }

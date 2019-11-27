@@ -35,7 +35,7 @@
 				</div>
 			</nav>
 		</aside>
-		<div @click="toggleSlide" class="sidebar__overlay" v-bind:class="{'on': slideMenu }"></div>
+		<button @click="toggleSlide" class="sidebar__overlay" v-bind:class="{'on': slideMenu }"></button>
 	</div>
 </template>
 

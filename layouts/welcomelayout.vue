@@ -1,5 +1,5 @@
 <template>
-		<div>
+		<div class="#welcome">
 			<header class="top-header">
 				<div class="container-fluid">
 					<div class="row">

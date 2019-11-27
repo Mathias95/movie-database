@@ -24,12 +24,14 @@ export default {
   ** Global CSS
   */
   css: [
-		'@/assets/sass/main.sass'
+		'@/assets/sass/main.sass',
+		'swiper/dist/css/swiper.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+		{ src: '@/plugins/swiper.js', ssr: false }
   ],
   /*
   ** Nuxt.js modules
@@ -53,7 +55,31 @@ export default {
     /*
     ** You can extend webpack config here
     */
+		extractCSS: true, //If you are using purgeCSS
+		postcss: {
+			plugins: {
+				'postcss-url': false
+			},
+			//Change the postcss-preset-env settings
+			preset: {
+				stage: 0, //enable all (experimental) polyfills
+				autoprefixer: {
+					grid: true,
+					flexbox: true,
+					overrideBrowserlist: ['last 2 versions', 'ie >= 10', '> 5%']
+				}
+			}
+		},
     extend(config, ctx) {
+			//Run ESLint on save
+			if (ctx.isDev && ctx.isClient) {
+				config.module.rules.push({
+					enforce: 'pre',
+					test: /\.(js|vue)$/,
+					loader: 'eslint-loader',
+					exclude: /(node_modules)/
+				})
+			}
     }
 	}
 }

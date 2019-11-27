@@ -1,5 +1,7 @@
 //Sidebar navigation
 .sidebar-container
+	
+.sidebar
 	height: 100%
 	flex-shrink: 0
 	width: 26rem
@@ -7,7 +9,6 @@
 	display: none
 	position: fixed
 	z-index: 3
-	width: 26rem
 	left: 0
 	top: 0
 	bottom: 0
@@ -17,9 +18,6 @@
 		position: static
 		flex-shrink: 0
 		display: block
-	
-.sidebar
-	height: 100%
 
 	//This class is for the hamburger menu slide toggle function
 	&.on
@@ -30,7 +28,6 @@
 		position: relative
 		display: flex
 		overflow: hidden
-		//overflow-y: auto
 
 	&__menu-wrapper
 		height: 100%
@@ -100,6 +97,10 @@
 		top: 0
 		left: 0
 		background-color: $black-opc-75-color
+		border: 0
+
+		@media #{$xl-bp}
+			display: none
 
 		&.on
 			display: block

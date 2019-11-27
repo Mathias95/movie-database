@@ -6,7 +6,9 @@
 				<span class="header__mobile-line header__mobile-line--2"></span>
 				<span class="header__mobile-line header__mobile-line--3"></span>
 			</button>
-			<logo class="header__logo"/>
+			<nuxt-link to="/home" class="header__logo-link">
+				<logo class="header__logo"/>
+			</nuxt-link>
 			<div class="header__search">
 				<Search/>
 			</div>
