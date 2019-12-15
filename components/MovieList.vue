@@ -5,7 +5,6 @@
 				<header class="movies__headline col">
 					<h2 class="movies__title heading-2">Trending movies</h2>
 					<div class="movies__underline-wrapper">
-						<div class="movies__underline"></div>
 					</div>
 				</header>
 			</div>

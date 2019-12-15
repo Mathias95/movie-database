@@ -4,7 +4,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col">
-							<logo/>
+							<LogoText/>
 						</div>
 					</div>
 				</div>
@@ -14,11 +14,11 @@
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
+import LogoText from "~/components/LogoText.vue";
 
 export default {
 	components: {
-		Logo
+		LogoText
 	}
 }
 </script>

@@ -1,33 +1,17 @@
 .movie-detail
 
 	&__banner
-		height: 75vh
+		height: 100vh
 		display: flex
 		align-items: flex-end
-		position: relative
-		background-image: url("~assets/images/movie-banner-bg.jpg")
-		background-size: cover
-		background-position: 50% 50%
-		background-repeat: no-repeat
+		background-image: url("~assets/images/wonderwomanbg.jpg")
+		@include bg-image
 
 		&::after
-			content: ""
-			height: 30rem
-			width: 100%
-			position: absolute
-			right: 0
-			bottom: 0
-			left: 0
-			background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, transparent),color-stop(1, black))
-
-			@media #{$md-bp}
-				height: 40rem
-
-		@media #{$lg-bp}
-			height: 80vh
+			@include fade-overlay
 
 		@media #{$xl-bp}
-			height: 80rem
+			height: calc(100vh - 10rem)
 
 	&__banner-container
 		margin-bottom: 8rem
@@ -80,11 +64,11 @@
 		margin-bottom: 0rem
 
 	&__tag
-		font-size: 1rem
-		padding: .6rem 1.8rem
+		font-size: 1.1rem
 		font-weight: $medium
+		padding: .8rem 2rem
 		text-transform: uppercase
-		background-color: $white-opc-15-color
+		background-color: $white-opc-30-color
 		border-radius: 2.5rem
 
 		&:not(:last-child)

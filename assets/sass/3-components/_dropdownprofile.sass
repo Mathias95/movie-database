@@ -1,13 +1,13 @@
 .dropdown
 	position: relative
-	margin: 3rem 0rem 4rem 0rem
-	padding: 0rem 2rem
+	//margin: 3rem 0rem 4rem 0rem
+	//padding: 0rem 2rem
 
 	@media only screen and (min-width: 23.375em)
-		padding: 0rem 3rem
+		//padding: 0rem 3rem
 
 	@media #{$xl-bp}
-		margin: 4rem 0rem 3rem 0rem
+		//margin: 4rem 0rem 3rem 0rem
 
 	&__button
 		display: block
@@ -28,8 +28,8 @@
 		cursor: pointer
 		border-radius: 100rem
 		overflow: hidden
-		height: 4.5rem
-		width: 4.5rem
+		height: 5rem
+		width: 5rem
 
 	&__profile-img
 		box-shadow: 0 20px 25px -5px rgba($black-color, 0.1), 0 10px 10px -5px rgba($black-color, 0.04)
@@ -69,7 +69,7 @@
 		position: absolute
 		z-index: 20
 		background-color: $white-color
-		width: 19.2rem
+		width: 17.5rem
 		border-radius: .4rem
 		margin-top: 1.2rem
 		padding: .8rem 0
@@ -79,6 +79,19 @@
 		
 	&__content-list
 		list-style-type: none
+
+	&__content-item
+
+		&:last-child
+			margin-top: .8rem
+			border-top: 1px solid #E9E9E9
+
+			a
+				margin-top: .8rem
+				color: #BEBEBE
+
+				&:hover
+					color: $white-color
 
 	&__content-link
 		font-weight: $light
@@ -95,6 +108,18 @@
 
 	&__content-icon
 		margin-right: 1.2rem
+
+	&--mobile
+		margin: 3rem
+
+		@media #{$xl-bp}
+			display: none
+				
+	&--desktop
+		display: none
+
+		@media #{$xl-bp}
+			display: block
 
 
 //Focus statement on profile dropdown, when open and close

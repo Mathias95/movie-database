@@ -1,25 +1,30 @@
 //Top heading with hamburger icon and search function
 .header
 	position: absolute
-	z-index: 1
+	z-index: 2
 	top: 0
 	right: 0
 	left: 0
 	padding: 1.6rem 0
 	background-color: $grey-dark-4-color
 	box-shadow: $xsmall-shadow
+	border-bottom: .1rem solid #3B4958
 
 	@media #{$xl-bp}
-		padding: 4rem 0
-		background-color: $trans-color
-		box-shadow: none
+		position: relative
+		padding: 0
+		display: flex
+		min-height: 10rem
 
 	&__mobile-wrapper
 		display: flex
 		align-items: center
+		justify-content: space-between
+
+		@media #{$xl-bp}
+			flex-direction: row-reverse
 
 	&__mobile
-		margin-right: auto
 		height: 3rem
 		width: 3rem
 		cursor: pointer
@@ -56,11 +61,6 @@
 
 		&--3
 			margin-top: .6rem
-
-	&__logo-link
-		margin-right: auto
-		text-decoration: none
-		color: $white-color
 
 	&__logo
 		display: none

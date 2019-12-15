@@ -1,15 +1,20 @@
 .banner
 	height: 100vh
-	background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("~assets/images/banner.jpg")
-	background-position: 0rem 0rem, 50% 50%
-	background-size: cover
-	background-repeat: no-repeat
-	position: relative
+	background-image: url(~assets/images/HomeBannerImg.jpg)
+	@include bg-image
+
+	&::after
+		@include fade-overlay
+
+	@media #{$xl-bp}
+		height: calc(100vh - 10rem)
 
 	&__container
 		height: 100%
 		display: flex
 		align-items: flex-end
+		position: relative
+		z-index: 1
 
 	&__text-col
 		margin-bottom: 12rem
@@ -28,10 +33,23 @@
 			max-width: 44rem
 
 		@media #{$lg-bp}
-			max-width: 67rem
+			max-width: 57rem
+
+	&__intro-title
+		font-size: 1.4rem
+		font-weight: $medium
+		text-transform: uppercase
+		display: inline-block
+		margin-bottom: 4rem
+		letter-spacing: 1rem
+
+		@media #{$lg-bp}
+			font-size: 1.6rem
+			margin-bottom: 8rem
 
 	&__title
 		margin-bottom: 2rem
 
 	&__text
 		font-size: 1.6rem
+		line-height: 3rem

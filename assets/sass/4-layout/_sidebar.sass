@@ -12,8 +12,11 @@
 	left: 0
 	top: 0
 	bottom: 0
+	border-right: .1rem solid #3B4958
+	box-shadow: $default-shadow
 	
 	@media #{$xl-bp}
+		width: 10rem
 		left: 0
 		position: static
 		flex-shrink: 0
@@ -52,19 +55,45 @@
 	&__menu-inner
 		flex-grow: 1
 
+	&__logo
+		display: none
+		@media #{$xl-bp}
+			display: flex
+			align-items: center
+			justify-content: center
+			height: 10rem
+			width: 100%
+			border-bottom: .1rem solid #3B4958
+
+	&__logo-link
+		text-decoration: none
+		color: $white-color
+
 	&__list
 		margin-bottom: 2rem
 		list-style-type: none
 
+		@media #{$xl-bp}
+			margin: 5.5rem 0rem
+
 	&__item
+		@media #{$xl-bp}
+			&:not(:last-child)
+				margin-bottom: 5rem
+
 		a.nuxt-link-exact-active
 			color: $white-color
 			background-color: $grey-dark-5-color
 			border-left: .50rem solid $primary-color
 
+			@media #{$xl-bp}
+				color: $primary-color
+				background-color: $trans-color
+				border-left: none
+
 	&__link
 		color: $grey-dark-1-color
-		font-size: 1.4rem
+		font-size: 1.5rem
 		text-decoration: none
 		text-transform: capitalize
 		padding: 1.4rem 2.5rem
@@ -73,20 +102,37 @@
 		align-items: center
 		line-height: 1
 		border-left: .50rem solid $trans-color
+		font-weight: $light
 
 		&:hover
 			color: $white-color
 			background-color: $grey-dark-5-color
 			border-left: .50rem solid $primary-color
 
+		@media #{$xl-bp}
+			padding: 0rem
+			flex-direction: column
+			border-left: none
+
+			&:hover
+				background-color: $trans-color
+				border-left: none
+
 	&__item-icon
 		margin-right: 1rem
+
+		@media #{$xl-bp}
+			margin-right: 0rem
+			margin-bottom: .5rem
 
 	&__bottom-line
 		margin: 0rem 2rem
 		background-color: $grey-dark-3-color
 		border: 0
 		height: .1rem
+
+		@media #{$xl-bp}
+			display: none
 
 	&__overlay
 		min-width: 100%

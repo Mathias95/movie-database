@@ -5,5 +5,6 @@
 				<div class="logo__icon"></div>
 			</div>
 		</div>
+		<p class="logo__text">Movie Library</p>
 	</div>
 </template>

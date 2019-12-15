@@ -6,7 +6,7 @@
 					<div class="sidebar__menu--scroll">
 						<div class="sidebar__menu--scrollable">
 							<div class="sidebar__menu-inner">
-								<DropdownProfile>
+								<DropdownProfile class="dropdown--mobile">
 									<template #trigger="{hasFocus, isOpen}">
 										<span class="dropdown__profile-img--wrapper trans-fast" :class="[(hasFocus || isOpen) ? 'focus-on' : 'focus-off' ]">
 											<img class="dropdown__profile-img" src="~assets/images/profile-img.jpg" alt="profile image">
@@ -14,12 +14,17 @@
 									</template>
 									<template #dropdown>
 										<ul class="dropdown__content-list">
-											<li class="dropdown__content-item"><nuxt-link to="/" ref="account" class="dropdown__content-link trans-fast"><i class="material-icons dropdown__content-icon">person_outline</i>Account</nuxt-link></li>
-											<li class="dropdown__content-item"><nuxt-link to="/" class="dropdown__content-link trans-fast"><i class="material-icons dropdown__content-icon">help_outline</i>Help</nuxt-link></li>
-											<li class="dropdown__content-item"><nuxt-link to="/" class="dropdown__content-link trans-fast"><i class="material-icons dropdown__content-icon">input</i>Sign out</nuxt-link></li>
+											<li class="dropdown__content-item"><nuxt-link to="/" ref="account" class="dropdown__content-link trans-fast">Account</nuxt-link></li>
+											<li class="dropdown__content-item"><nuxt-link to="/" class="dropdown__content-link trans-fast">Help</nuxt-link></li>
+											<li class="dropdown__content-item"><nuxt-link to="/" class="dropdown__content-link trans-fast">Sign out</nuxt-link></li>
 										</ul>
 									</template>
 								</DropdownProfile>
+								<div class="sidebar__logo">
+									<nuxt-link to="/home" class="sidebar__logo-link">
+										<logo class="header__logo"/>
+									</nuxt-link>
+								</div>
 								<ul class="sidebar__list">
 									<li class="sidebar__item" v-for="item in items" :key="item.title">
 										<nuxt-link :to="item.to" class="sidebar__link trans-fast"> 
@@ -52,7 +57,7 @@ export default {
 			items: [
 				{
 					icon: 'star',
-					title: 'Trending Movies',
+					title: 'Trending',
 					to: '/home'
 				},
 				{
@@ -67,7 +72,7 @@ export default {
 				},
 				{
 					icon: 'favorite_border',
-					title: 'Favorite Movies',
+					title: 'Favourites',
 					to: '/'
 				}
 			]
