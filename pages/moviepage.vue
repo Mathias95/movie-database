@@ -1,5 +1,5 @@
 <template>
-	<div class="movie-detail">
+	<div class="movie-detail grow">
 		<Movie/>
 	</div>
 </template>

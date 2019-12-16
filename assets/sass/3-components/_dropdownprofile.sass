@@ -1,35 +1,28 @@
 .dropdown
 	position: relative
-	//margin: 3rem 0rem 4rem 0rem
-	//padding: 0rem 2rem
-
-	@media only screen and (min-width: 23.375em)
-		//padding: 0rem 3rem
-
-	@media #{$xl-bp}
-		//margin: 4rem 0rem 3rem 0rem
 
 	&__button
-		display: block
+		display: flex
+		align-items: center
 		background-color: $trans-color
 		border: 0
 		z-index: 20
+		cursor: pointer
 
 		&:focus
 			outline: none
 
-	&__profile-container
-		display: flex
-		align-items: center
-
 	&__profile-img--wrapper
 		display: block
 		outline: none
-		cursor: pointer
 		border-radius: 100rem
 		overflow: hidden
-		height: 5rem
-		width: 5rem
+		height: 4rem
+		width: 4rem
+
+		@media #{$lg-bp}
+			height: 5rem
+			width: 5rem
 
 	&__profile-img
 		box-shadow: 0 20px 25px -5px rgba($black-color, 0.1), 0 10px 10px -5px rgba($black-color, 0.04)
@@ -38,16 +31,23 @@
 		width: 100%
 
 	&__profile-wrapper
+		display: none
 		font-size: 1.6rem
-		display: flex
 		align-items: center
 		color: $grey-dark-1-color
 		margin-left: 1rem
+
+		@media #{$lg-bp}
+			display: flex
 
 	&__profile-tag
 		margin-right: .5rem
 
 	&__profile-name
+
+	&__profile-icon
+		margin-left: .5rem
+		color: $grey-dark-1-color
 
 	&__overlay
 		position: fixed
@@ -71,7 +71,7 @@
 		background-color: $white-color
 		width: 17.5rem
 		border-radius: .4rem
-		margin-top: 1.2rem
+		margin-top: 1rem
 		padding: .8rem 0
 		list-style-type: none
 		box-shadow: 0 20px 25px -5px rgba($black-color, 0.1), 0 10px 10px -5px rgba($black-color, 0.04)
@@ -94,7 +94,6 @@
 					color: $white-color
 
 	&__content-link
-		font-weight: $light
 		color: $grey-dark-3-color
 		display: flex
 		align-items: center
@@ -105,21 +104,6 @@
 		&:hover
 			color: $white-color
 			background: $primary-color
-
-	&__content-icon
-		margin-right: 1.2rem
-
-	&--mobile
-		margin: 3rem
-
-		@media #{$xl-bp}
-			display: none
-				
-	&--desktop
-		display: none
-
-		@media #{$xl-bp}
-			display: block
 
 
 //Focus statement on profile dropdown, when open and close

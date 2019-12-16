@@ -1,12 +1,12 @@
 .banner
-	height: 100vh
+	height: calc(100vh - 7rem)
 	background-image: url(~assets/images/HomeBannerImg.jpg)
 	@include bg-image
 
 	&::after
 		@include fade-overlay
 
-	@media #{$xl-bp}
+	@media #{$lg-bp}
 		height: calc(100vh - 10rem)
 
 	&__container

@@ -11,12 +11,13 @@
 				@blur="buttonHasFocus = false" 
 				type="button" 
 				class="dropdown__button">
-						<slot name="trigger" :hasFocus="buttonHasFocus" :isOpen="isOpen"></slot>
+					<slot name="trigger" :hasFocus="buttonHasFocus" :isOpen="isOpen"></slot>
+					<div class="dropdown__profile-wrapper ellipsis">
+						<span class="dropdown__profile-tag">Hi,</span>
+						<p class="dropdown__profile-name ellipsis">Mathias</p>
+					</div>
+					<i class="material-icons dropdown__profile-icon">expand_more</i>
 				</button>
-				<div class="dropdown__profile-wrapper ellipsis">
-					<span class="dropdown__profile-tag">Hi,</span>
-					<p class="dropdown__profile-name ellipsis">Mathias</p>
-				</div>
 			</div>
 			
 			<button v-if="isOpen" @click="isOpen = false" type="button" class="dropdown__overlay">&nbsp;</button>

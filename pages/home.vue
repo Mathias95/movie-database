@@ -1,8 +1,8 @@
 <template>
-	<section>
+	<div class="flex-grow">
 		<HomeBanner/>
 		<MovieList/>
-	</section>
+	</div>
 </template>
 
 <script>

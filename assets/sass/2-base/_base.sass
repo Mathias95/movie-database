@@ -26,6 +26,31 @@ body
 	color: $white-color
 	font-weight: $normal
 
+html, body, #__nuxt, #__layout, #app
+	display: flex
+	flex-direction: column
+	height: 100%
+	width: 100%
+	position: relative
+	overflow: hidden
+
+.app-container
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	position: absolute
+	display: flex
+	flex-direction: column
+	flex-wrap: nowrap
+	overflow: hidden
+
+.app-wrapper
+	display: flex
+	flex-direction: column
+	flex-wrap: nowrap
+	height: 100%
+
 img
 	max-width: 100%
 	max-height: 100%

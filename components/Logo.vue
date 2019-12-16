@@ -1,9 +1,5 @@
 <template>
 	<div class="logo">
-		<div class="logo__outer">
-			<div class="logo__inner">
-				<div class="logo__icon"></div>
-			</div>
-		</div>
+		<img src="~assets/images/tmdb-logo.svg" alt="Logo">
 	</div>
 </template>

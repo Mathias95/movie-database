@@ -1,5 +1,5 @@
 <template>
-	<main class="movies-wrapper">
+	<section class="movies-wrapper">
 		<div class="movies costum-container">
 			<div class="row">
 				<header class="movies__headline col">
@@ -17,7 +17,7 @@
 				</div>
 			</div>
 		</div>
-	</main>
+	</section>
 </template>
 
 <script>

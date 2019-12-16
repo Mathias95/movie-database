@@ -1,13 +1,19 @@
-#app
-	display: flex
-	height: 100vh
-	overflow: hidden
-
-.main	
+.main-wrapper
 	position: relative
 	display: flex
-	flex-direction: column
-	flex: 1 1 0%
-	min-width: 0
-	overflow: auto
+	flex-wrap: nowrap
+	overflow: hidden
 	height: 100%
+
+.main-content
+	position: relative
+	display: flex
+	flex-grow: 1
+	height: 100%
+	width: 100%
+	overflow: hidden
+	flex-direction: column
+
+.main-scroll
+	height: 100%
+	position: relative
