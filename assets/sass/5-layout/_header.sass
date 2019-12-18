@@ -10,10 +10,11 @@
 	flex-shrink: 0
 	display: flex
 	align-items: center
-	height: 7rem
+	height: 6rem
+	box-shadow: 0 1px 2px rgba(0,0,0,.15),0 0 2px rgba(0,0,0,.1)
 
 	@media #{$lg-bp}
-		min-height: 10rem
+		min-height: 8.5rem
 
 	&__mobile-wrapper
 		display: flex
@@ -29,6 +30,7 @@
 			align-items: center
 			justify-content: center
 			width: 10rem
+			flex-shrink: 0
 			height: 100%
 
 	&__shadow-prop
@@ -36,14 +38,3 @@
 		height: 100%
 		display: flex
 		align-items: center
-
-		&:after
-			content: ""
-			width: 100%
-			box-shadow: inset 0px 4px 8px -3px rgba(17, 17, 17, .06)
-			position: absolute
-			bottom: -.5rem
-			right: 0
-			left: 0
-			height: .5rem
-			opacity: 1

@@ -20,14 +20,15 @@
 		@media #{$xl-bp}
 			margin-bottom: 10rem
 
+	&__banner-row
+		@media #{$xl-bp}
+			align-items: flex-end
+
 	&__title-wrapper
 		margin-bottom: 1.5rem
-		display: flex
-		align-items: center
-
+		
 		@media #{$md-bp}
 			margin-bottom: 2.5rem
-			align-items: flex-end
 
 	&__wrapper
 		@media #{$md-bp}
@@ -39,6 +40,8 @@
 			margin-bottom: 5rem
 
 	&__title
+		word-break: break-all
+
 		@media #{$sm-bp}
 			line-height: 1
 
@@ -46,6 +49,7 @@
 		display: none
 
 		@media #{$md-bp}
+			font-weight: 400
 			font-size: 2rem
 			display: inline-block
 			color: $white-opc-50-color
@@ -192,3 +196,24 @@
 
 		&:focus
 			outline: none
+
+.movie-poster
+	display: none
+
+	@media #{$xl-bp}
+		display: flex
+		justify-content: flex-end
+
+	&__wrapper
+		height: 58vh
+		width: 38vh
+		border-radius: .5rem
+		box-shadow: $default-shadow
+
+		@media #{$xxl-bp}
+
+	&__img
+		object-fit: cover
+		height: 100%
+		width: 100%
+		border-radius: .5rem

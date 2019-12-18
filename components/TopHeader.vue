@@ -6,7 +6,7 @@
 			</nuxt-link>
 		</div>
 		<div class="header__shadow-prop">
-			<div class="header__mobile-wrapper costum-container costum-container">
+			<div class="header__mobile-wrapper costum-container costum-container--full">
 				<div class="header__search">
 					<Search/>
 				</div>

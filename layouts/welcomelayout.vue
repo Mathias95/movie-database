@@ -1,7 +1,7 @@
 <template>
 		<div class="#welcome">
 			<header class="top-header">
-				<div class="container-fluid">
+				<div class="costum-container costum-container--full">
 					<div class="row">
 						<div class="col">
 							<Logo/>

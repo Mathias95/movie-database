@@ -1,5 +1,5 @@
 .banner
-	height: calc(100vh - 7rem)
+	height: calc(100vh - 6rem)
 	background-image: url(~assets/images/HomeBannerImg.jpg)
 	@include bg-image
 
@@ -7,16 +7,33 @@
 		@include fade-overlay
 
 	@media #{$lg-bp}
-		height: calc(100vh - 10rem)
+		height: calc(100vh - 8.5rem)
 
-	&__container
+	&__inner
 		height: 100%
 		display: flex
 		align-items: flex-end
 		position: relative
 		z-index: 1
 
-	&__text-col
+	&__text-intro
+		max-width: 100%
+		width: 100%
+		padding: 0rem 1.5rem
+		flex-basis: 0
+		flex-grow: 1
+		position: relative
+
+		@media #{$sm-bp}
+			max-width: 42rem
+
+		@media #{$md-bp}
+			max-width: 44rem
+
+		@media #{$lg-bp}
+			max-width: 60rem
+
+	&__text-wrapper
 		margin-bottom: 12rem
 		position: relative
 		flex-basis: 0
@@ -24,16 +41,6 @@
 
 		@media #{$lg-bp}
 			margin-bottom: 15rem
-
-	&__text-wrapper
-		@media #{$sm-bp}
-			max-width: 39rem
-
-		@media #{$md-bp}
-			max-width: 44rem
-
-		@media #{$lg-bp}
-			max-width: 57rem
 
 	&__intro-title
 		font-size: 1.4rem
@@ -53,3 +60,16 @@
 	&__text
 		font-size: 1.6rem
 		line-height: 3rem
+	
+	&__media
+		display: none
+
+		@media #{$xxl-bp}
+			display: block
+			background: red
+
+	&__media-title
+		margin-bottom: 2rem
+		font-weight: $medium
+
+

@@ -1,9 +1,13 @@
 .main-wrapper
 	position: relative
 	display: flex
+	flex-direction: column-reverse
 	flex-wrap: nowrap
 	overflow: hidden
 	height: 100%
+
+	@media #{$lg-bp}
+		flex-direction: row
 
 .main-content
 	position: relative
