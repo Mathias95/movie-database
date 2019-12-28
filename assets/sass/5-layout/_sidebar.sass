@@ -1,16 +1,16 @@
 //Sidebar navigation	
 .sidebar
 	flex-shrink: 0
-	background-color: $grey-dark-4-color
+	background-color: #141414
 	z-index: 3
 	left: 0
 	right: 0
 	bottom: 0
-	border-top: .1rem solid #3B4958
-	box-shadow: $default-shadow
+	box-shadow: rgba(#0A0A0A, .30) 0 -6px 6px
 	flex-shrink: 0
 	
 	@media #{$lg-bp}
+		box-shadow: $default-shadow
 		border-top: none
 		height: 100%
 		width: 10rem
@@ -37,7 +37,7 @@
 		padding: 0 1.5rem
 		margin-left: auto
 		margin-right: auto
-		min-height: 6rem
+		min-height: 5.6rem
 
 		@media #{$sm-bp}
 			max-width: 54rem
@@ -122,6 +122,9 @@
 			&:hover
 				background-color: $trans-color
 				border-left: none
+
+	&__link-text
+		font-weight: $weight-normal	
 
 	&__item-icon
 		margin-bottom: .5rem

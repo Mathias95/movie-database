@@ -1,5 +1,5 @@
 <template>
-	<section class="movies-wrapper">
+	<section class="movies-wrapper section-spacer">
 		<div class="movies costum-container">
 			<div class="row">
 				<header class="movies__headline col">
@@ -13,7 +13,7 @@
 			</ul>
 			<div class="row">
 				<div class="movies__more col">
-					<button class="movies__load btn btn-primary">Load more<i class="material-icons top__icon margin-l-5">keyboard_arrow_right</i></button>
+					<button class="movies__load btn btn-primary">Load more<i class="material-icons top__icon">keyboard_arrow_right</i></button>
 				</div>
 			</div>
 		</div>

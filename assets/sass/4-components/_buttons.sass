@@ -6,7 +6,7 @@
 	text-align: center
 	border-radius: 10rem
 	border: 0
-	font-weight: $normal
+	font-weight: $weight-normal
 	background-color: transparent
 	padding: 1.55rem 4rem
 	min-height: 5.5rem
@@ -29,7 +29,7 @@
 .btn
 	@extend %btn
 	&-primary
-		background-color: $primary-color
+		background-image: linear-gradient(145deg, rgb(249, 159, 0), rgb(219, 48, 105) 90%)
 		
 		&:hover
 			background-color: darken( $primary-color, 5% )
@@ -43,7 +43,5 @@
 
 	&-tertiary
 		@extend %btn
-		background-color: $tertiary-color
-
-		&:hover
-			background-color: lighten( $tertiary-color, 5% )
+		background-color: $trans-color
+		border: .1rem solid $white-color

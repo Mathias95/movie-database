@@ -9,9 +9,8 @@
 
 					<div class="movie-detail__wrapper">
 						<ul class="movie-genre">
-							<li class="movie-genre__tag">Adventure</li>
-							<li class="movie-genre__tag">Action</li>
-							<li class="movie-genre__tag">Fantasy</li>
+							<li class="movie-genre__tag"><span class="movie-genre__tag-text">Action</span></li>
+							<li class="movie-genre__tag"><span class="movie-genre__tag-text">Thriller</span></li>
 						</ul>
 
 						<ul class="movie-info">
@@ -32,7 +31,7 @@
 					</div>
 
 					<div class="movie-social">
-						<button class="movie-social__watch btn btn-secondary"><i class="movie-social__watch-icon material-icons margin-r-5">play_arrow</i>Watch trailer</button>
+						<button class="movie-social__watch btn btn-primary"><i class="movie-social__watch-icon material-icons margin-r-5">play_arrow</i>Watch trailer</button>
 						<nuxt-link to="/" class="movie-social__link movie-social__link--desktop btn btn-tertiary">IMDb</nuxt-link>
 						<button class="movie-social__favourite"><i class="movie-social__favourite-icon material-icons">favorite_border</i></button>
 					</div>

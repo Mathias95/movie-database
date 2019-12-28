@@ -2,7 +2,7 @@
 	<div>
 		<MovieBanner/>
 
-		<section class="movie-content">
+		<section class="movie-content section-spacer">
 			<div class="movie-content__container costum-container">
 				<div class="row">
 					<div class="movie-content__left col-12 col-lg-6">

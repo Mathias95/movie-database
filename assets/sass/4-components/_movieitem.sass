@@ -33,7 +33,7 @@
 		text-decoration: none
 		display: block
 		width: 100%
-		margin-bottom: 1rem
+		margin-bottom: 1.5rem
 		
 		&:hover
 			.movie-item__img-wrapper
@@ -54,52 +54,62 @@
 		height: auto
 		border-radius: .5rem
 
-	&__rating
-		font-size: 1.5rem
-		font-weight: $medium
-		background-color: $secondary-color
-		color: $white-color
-		border-radius: 100rem
-		height: 5rem
-		width: 5rem
-		display: inline-flex
-		align-items: center
-		justify-content: center
-		line-height: 1
-		box-shadow: $medium-shadow
-		position: absolute
-		top: 1.5rem
-		right: 1.5rem
-
-		@media only screen and (min-width: 21.87em)
-			height: 4rem
-			width: 4rem
-
-		@media #{$sm-bp}
-			font-size: 1.6rem
-			height: 5rem
-			width: 5rem
-			top: 2rem
-			right: 2rem
-
 	&__info
 		text-align: left
 
-	&__genre
+	&__genre-list
+		display: flex
+		flex-wrap: wrap
+		list-style-type: none
 		font-size: 1.4rem
 		line-height: 1.3
-		font-weight: $light
+		font-weight: $weight-light
 		color: $grey-dark-2-color
 		text-transform: capitalize
-		margin-bottom: .5rem
+		margin-bottom: 1rem
 
 		@media #{$xl-bp}
 			font-size: 1.6rem
+
+	&__genre-item
+		height: 2.4rem
+		font-size: 1.1rem
+		color: $white-color
+		border-radius: 100rem
+		background-color: rgba(122, 120, 121, .65)
+		padding: 0 1.2rem
+		max-width: 100%
+		display: inline-flex
+		align-items: center
+		line-height: 2rem
+		outline: none
+		overflow: hidden
+		position: relative
+		text-decoration: none
+		transition-duration: 0.25s
+		transition-property: box-shadow, opacity
+		vertical-align: middle
+		white-space: nowrap
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+
+		&:not(:last-child)
+			margin-right: .5rem
+
+		@media #{$xl-bp}
+			height: 2.8rem
+			font-size: 1.3rem
+			padding: 0rem 2.2rem
+
+	&__genre-text
+		align-items: center
+		display: inline-flex
+		height: 100%
+		max-width: 100%
 
 	&__title
 		text-transform: capitalize
 		font-size: 1.6rem
-		font-weight: $normal
+		font-weight: $weight-normal
 
 		@media #{$xl-bp}
-			font-size: 1.8rem
+			font-size: 2rem

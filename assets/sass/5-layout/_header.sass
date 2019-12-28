@@ -5,27 +5,26 @@
 	top: 0
 	right: 0
 	left: 0
-	background-color: #141D26
-	border-bottom: .1rem solid #3B4958
 	flex-shrink: 0
 	display: flex
 	align-items: center
-	height: 6rem
+	height: 5.6rem
 	box-shadow: 0 1px 2px rgba(0,0,0,.15),0 0 2px rgba(0,0,0,.1)
 
 	@media #{$lg-bp}
-		min-height: 8.5rem
+		background-color: #141414
+		min-height: 10rem
 
 	&__mobile-wrapper
 		display: flex
 		align-items: center
 		justify-content: space-between
-		flex-direction: row-reverse
 
 	&__logo
 		display: none
 
 		@media #{$lg-bp}
+			background-color: #0E0E0E
 			display: flex
 			align-items: center
 			justify-content: center
@@ -34,6 +33,7 @@
 			height: 100%
 
 	&__shadow-prop
+		border-bottom: .1rem solid #343443
 		width: 100%
 		height: 100%
 		display: flex
